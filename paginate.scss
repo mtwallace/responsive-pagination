@@ -1,0 +1,69 @@
+.pagination {
+	width: 100%;
+	li {
+		float: left;
+
+		&:last-of-type {
+			margin-right: 0 !important;
+		}
+
+		&.ellipsis {
+			transform: translateY(5px);
+			line-height: 39px;
+			span {
+				padding: 0 2px;
+				@media #{$medium} {
+					padding: 0 10px;
+				}
+			}
+		}
+
+		&.page {
+			display: block;
+			height: 39px;
+			line-height: 37px;
+			margin-right: 5px;
+			text-align: center;
+			width: 39px;
+
+			&.current {
+				transform: translateY(2.5px);
+				@media #{$medium} {
+					transform: translateY(5px);
+				}
+				border: solid 2px $blue;
+			}
+
+			&.link {
+				transform: translateY(2.5px);
+				@media #{$medium} {
+					transform: translateY(5px);
+				}
+
+				a {
+					border: solid 1px $lightGray;
+					color: black;
+					display: block;
+					height: 39px;
+					line-height: 39px;
+					text-align: center;
+					width: 39px;
+				}
+			}
+		}
+	}
+
+	.button {
+		border: none;
+		font-size: 18px;
+		height: 44px;
+		line-height: 44px;
+		padding: 0;
+		width: 56px;
+		@media #{$medium} {
+			height: 51px;
+			line-height: 51px;
+			width: 76px;
+		}
+	}
+}
