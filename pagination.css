@@ -1,0 +1,70 @@
+.pagination {
+  width: 100%;
+}
+.pagination li {
+  float: left;
+}
+.pagination li:last-of-type {
+  margin-right: 0 !important;
+}
+.pagination li.ellipsis {
+  transform: translateY(5px);
+  line-height: 39px;
+}
+.pagination li.ellipsis span {
+  padding: 0 2px;
+}
+@media screen and (min-width: 640px) {
+  .pagination li.ellipsis span {
+    padding: 0 10px;
+  }
+}
+.pagination li.page {
+  display: block;
+  height: 39px;
+  line-height: 37px;
+  margin-right: 5px;
+  text-align: center;
+  width: 39px;
+}
+.pagination li.page.current {
+  transform: translateY(2.5px);
+  border: solid 2px blue;
+}
+@media screen and (min-width: 640px) {
+  .pagination li.page.current {
+    transform: translateY(5px);
+  }
+}
+.pagination li.page.link {
+  transform: translateY(2.5px);
+}
+@media screen and (min-width: 640px) {
+  .pagination li.page.link {
+    transform: translateY(5px);
+  }
+}
+.pagination li.page.link a {
+  border: solid 1px #ccc;
+  color: black;
+  display: block;
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  width: 39px;
+}
+.pagination .button {
+  border: none;
+  font-size: 18px;
+  height: 44px;
+  line-height: 44px;
+  padding: 0;
+  width: 56px;
+}
+@media screen and (min-width: 640px) {
+  .pagination .button {
+    height: 51px;
+    line-height: 51px;
+    width: 76px;
+  }
+}
